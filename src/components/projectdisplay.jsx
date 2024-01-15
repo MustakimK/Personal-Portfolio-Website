@@ -1,4 +1,4 @@
-import './ProjectDisplay.css';
+import './projectdisplay.css';
 import PropTypes from 'prop-types';
 
 const ProjectDisplay = ({ project, isRightAligned }) => {
