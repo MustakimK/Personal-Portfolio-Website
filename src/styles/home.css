@@ -1,0 +1,122 @@
+.home {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 70px;
+    padding-bottom: 50px;
+    text-align: center;
+    box-sizing: border-box;
+    flex-direction: row-reverse;
+}
+
+.home div {
+    min-height: 100%;
+    text-align: left;
+}
+
+.intro {
+    margin-bottom: .1em;
+}
+
+.home a img {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+}
+
+.home h1 {
+    font-size: clamp(1.5rem, 2.5vw, 2.2em);
+    font-size: 1.7em;
+    font-weight: normal;
+    margin: 1em 0;
+}
+
+.home h1 span {
+    font-size: 2.2em;
+    font-weight: bold;
+    color: #000000;
+    background: -webkit-linear-gradient(135deg, #0433ed, #000000);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.home h2 {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #2c2c2c;
+    margin: 1em 0;
+}
+
+.home-pic {
+    width: 600px;
+    margin: 20px;
+    border-radius: 10px;
+    border: 2px solid #000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.github-pic, .linkedin-pic {
+    transition: transform 0.3s;
+}
+
+.github-pic:hover, .linkedin-pic:hover {
+    transform: scale(1.05);
+}
+
+
+.btn-resume {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0433ed;
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-resume:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.github-pic, .linkedin-pic {
+    transition: transform 0.3s;
+}
+
+.github-pic:hover, .linkedin-pic:hover {
+    transform: scale(1.05); 
+}
+
+@media (max-width: 1040px) {
+    .home {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .home-pic {
+        width: calc(90% - 40px);
+        margin: 20px;
+        box-sizing: border-box;
+    }
+
+    .home div {
+        text-align: center;
+    }
+
+    .social-icons{
+        justify-content: center;
+    }
+}

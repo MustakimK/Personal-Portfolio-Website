@@ -1,0 +1,139 @@
+.project-display {
+    display: flex;
+    flex-direction: row;
+    margin-left: 70px; 
+    margin-right: 70px;
+    margin-bottom: 40px; 
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s; 
+}
+
+.project-display:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.project-display.right-aligned {
+    flex-direction: row-reverse;
+}
+
+.project-image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.project-image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.project-info {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #000000;
+}
+
+.project-image-container {
+    flex: 0.5;
+    padding: 10px;
+    margin: 20px; 
+}
+
+.project-image {
+    max-width: 100%; 
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 5px;
+
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    border: 2px solid #000;
+}
+
+.project-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+
+.project-display.right-aligned .project-buttons {
+    justify-content: flex-start;
+}
+
+.project-display.left-aligned .project-buttons {
+    justify-content: flex-end;
+}
+
+
+.technology-list {
+    list-style: none;
+    padding: 0; 
+    margin-top: 10px;
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 10px; 
+}
+
+.technology-item {
+    background-color: #e4e4e4; 
+    padding: 5px 10px;
+    border-radius: 100px; 
+    font-size: 0.8em;
+}
+
+.project-btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 100px;
+    background-color: #0433ed;
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.project-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 1040px) {
+    .project-display {
+        flex-direction: column;
+        margin-left: 23px;
+        margin-right: 23px;
+        margin-bottom: 60px;
+    }
+
+    .project-display.right-aligned {
+        flex-direction: column;
+    }
+
+    .project-image-container, .project-info {
+        align-items: center;
+        padding: 10px;
+    }
+
+    .project-info {
+        text-align: center;
+    }
+
+    .technology-list{
+        justify-content: center;
+    }
+}
