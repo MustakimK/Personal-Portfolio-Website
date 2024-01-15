@@ -19,7 +19,7 @@ const About = () => {
                     My name is Mustakim Kazi and I am a full-stack web developer. 
                     I am currently a 3rd year student at McMaster University studying Computer Science.
                     I am currently looking for an internship for the summer of 2024 as a software engineer.
-                    Feel free to <a href="#contact" onClick={handleContactClick}>contact me</a> if you have any questions or would like to work with me!
+                    Feel free to <a href="#contact" onClick={handleContactClick}>contact me</a> if you have any questions or would like to work with me! (WIP)
                 </div>
                 <img src='./images/aboutme.jpg' alt="Picture of Me" className="about-pic" />
             </div>

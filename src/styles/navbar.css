@@ -105,6 +105,13 @@
 
     .links.active {
         max-height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-height: none;
+        padding: 0;
+        box-sizing: border-box; 
     }
 
     .link {
