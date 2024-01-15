@@ -10,7 +10,7 @@ const sampleProjects = [
         description: 'My personal portfolio website.',
         imageUrl: './images/home', 
         technologies: ['Javascript', 'React', 'HTML', 'CSS', 'Vite'],
-        githubUrl: 'https://github.com/username/car-rental',
+        githubUrl: 'https://github.com/MustakimK/mustakimk.github.io',
         liveDemoUrl: 'https://ilied.com'
     },
     {
