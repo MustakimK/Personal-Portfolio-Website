@@ -1,13 +1,30 @@
 import './projectdisplay.css';
 import PropTypes from 'prop-types';
+import React from 'react';
 
-const ProjectDisplay = ({ project, isRightAligned }) => {
-    const alignmentClass = isRightAligned ? 'right-aligned' : 'left-aligned';
+const ProjectDisplay = ({ project }) => {
+    const [imageIndex, setImageIndex] = React.useState(0);
+
+    const nextImage = () => {
+        setImageIndex((prevIndex) => (prevIndex + 1) % project.imageUrl.length);
+    };
+
+    const prevImage = () => {
+        setImageIndex((prevIndex) => (prevIndex - 1 + project.imageUrl.length) % project.imageUrl.length);
+    };
 
     return (
-        <article className={`project-display ${alignmentClass}`}>
+        <article className="project-display">
             <div className="project-image-container">
-                <img src={project.imageUrl} alt={`Project image of ${project.title}`} className="project-image" />
+                {project.imageUrl.length > 1 && (
+                    <button className="arrow-btn left-arrow" onClick={prevImage}>&lt;</button>
+                )}
+                
+                <img src={project.imageUrl[imageIndex]} alt={`Project image of ${project.title}`} className="project-image" />
+                
+                {project.imageUrl.length > 1 && (
+                    <button className="arrow-btn right-arrow" onClick={nextImage}>&gt;</button>
+                )}
             </div>
             <div className="project-info">
                 <h2>{project.title}</h2>
@@ -28,14 +45,13 @@ const ProjectDisplay = ({ project, isRightAligned }) => {
 
 ProjectDisplay.propTypes = {
     project: PropTypes.shape({
-        imageUrl: PropTypes.string.isRequired,
+        imageUrl: PropTypes.arrayOf(PropTypes.string).isRequired,
         title: PropTypes.string.isRequired,
         description: PropTypes.string.isRequired,
         technologies: PropTypes.arrayOf(PropTypes.string).isRequired,
         githubUrl: PropTypes.string.isRequired,
         liveDemoUrl: PropTypes.string
-    }),
-    isRightAligned: PropTypes.bool.isRequired
+    })
 };
 
 export default ProjectDisplay;
