@@ -50,7 +50,7 @@ const NavBar = () => {
                     <li><a href="#about" className="link" onClick={(e) => handleNavLinkClick(e, '#about')}>About</a></li>
                     <li><a href="#projects" className="link" onClick={(e) => handleNavLinkClick(e, '#projects')}>Projects</a></li>
                     <li><a href="#skills" className="link" onClick={(e) => handleNavLinkClick(e, '#skills')}>Skills</a></li>
-                    <li><a href="#contact" className="link" onClick={(e) => handleNavLinkClick(e, '#contact')}>Contact</a></li>
+                    <li><a href="#contact" className="link" onClick={(e) => handleNavLinkClick(e, '#contact')}>Contact Me</a></li>
                 </ul>
             </ul>
         </nav>
