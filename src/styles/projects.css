@@ -43,6 +43,7 @@
     .projects{
         grid-template-columns: 1fr;
         transition: height 0.5s ease-in-out;
+        padding: 40px;
     }
     .projects-title::before,
     .projects-title::after {
