@@ -16,15 +16,17 @@ const ProjectDisplay = ({ project }) => {
     return (
         <article className="project-display">
             <div className="project-image-container">
-                {project.imageUrl.length > 1 && (
-                    <button className="arrow-btn left-arrow" onClick={prevImage}>&lt;</button>
-                )}
-                
-                <img src={project.imageUrl[imageIndex]} alt={`Project image of ${project.title}`} className="project-image" />
-                
-                {project.imageUrl.length > 1 && (
-                    <button className="arrow-btn right-arrow" onClick={nextImage}>&gt;</button>
-                )}
+                <div>
+                    {project.imageUrl.length > 1 && (
+                        <button className="arrow-btn left-arrow" onClick={prevImage}>&lt;</button>
+                    )}
+                    
+                    <img src={project.imageUrl[imageIndex]} alt={`Project image of ${project.title}`} className="project-image" />
+                    
+                    {project.imageUrl.length > 1 && (
+                        <button className="arrow-btn right-arrow" onClick={nextImage}>&gt;</button>
+                    )}
+                </div>
             </div>
             <div className="project-info">
                 <h2>{project.title}</h2>

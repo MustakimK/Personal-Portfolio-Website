@@ -5,8 +5,8 @@ const sampleProjects = [
     {
         id: 1,
         title: 'Personal Portfolio Website',
-        description: 'My personal portfolio website.',
-        imageUrl: ['./images/projects/websiteportfolio1.png', './images/projects/shell.png'], 
+        description: "This portfolio website is a reflection of my journey in Full Stack Software Development, showcasing my projects, skills learned, and personal growth in the field. It's crafted with HTML, CSS, and JavaScript, and provides insights into my work, serving as a point of contact for potential collaborations and learning opportunities.",
+        imageUrl: ['./images/projects/portfoliowebsite1.png', './images/projects/portfoliowebsite4.png'], 
         technologies: ['Javascript', 'React', 'HTML', 'CSS', 'Vite'],
         githubUrl: 'https://github.com/MustakimK/mustakimk.github.io',
         liveDemoUrl: 'https://ilied.com'
@@ -14,39 +14,39 @@ const sampleProjects = [
     {
         id: 2,
         title: 'Halal Scanner',
-        description: 'Scans food products to determine if they are halal or not.',
-        imageUrl: ['./images/IMG-20220629-WA0004'], 
+        description: "An Android app that helps users identify Halal or Haram food products using Google's ML Kit Vision for barcode and text scanning, along with the Open Food Facts API for ingredient information. It's designed to store up to 100 items in the history, showcasing my skills in Android development, Google ML Kit Vision, API integration, and local database management with Android Room and SQLite.",
+        imageUrl: ['./images/projects/halalscanner1.png', './images/projects/halalscanner2.png'], 
         technologies: ['Kotlin', 'Android Studio', 'SQLite'],
         githubUrl: 'https://github.com/MustakimK/Halal-Scanner'
     },
     {
         id: 3,
-        title: 'Simple Shell Interface',
-        description: 'Simple shell interface that supports basic commands.',
-        imageUrl: ['./images/projects/shell.png'], 
+        title: 'MKShell',
+        description: "MKShell is a custom UNIX shell written in C. It includes common shell commands, a command history, signal handling, and robust error messages. It's designed for Linux environments and demonstrates my system programming skills.",
+        imageUrl: ['./images/projects/shellproj.png'], 
         technologies: ['C'],
         githubUrl: 'https://github.com/MustakimK/MKShell'
     },
     {
         id: 4,
         title: 'Rinvest',
-        description: 'DeltaHacks Hackathon Project',
-        imageUrl: ['./images/projects/rinvest1.png'], 
+        description: "Built to empower small businesses and entrepreneurs through accessible investment opportunities. This project, was built using React.js, Firebase and CSS. Working on this project allowed us to strengthen our teamwork skills and collaborate effectively in a hackathon environment.",
+        imageUrl: ['./images/projects/deltahacks1.png','./images/projects/deltahacks2.png','./images/projects/deltahacks3.png','./images/projects/deltahacks4.png'], 
         technologies: ['Javascript', 'React', 'Firebase', 'CSS'],
         githubUrl: 'https://github.com/AsherHaroon/DeltaHacksProject'
     },
     {
         id: 5,
-        title: 'Spy Network',
-        description: 'Learned class inheritance and object-oriented programming in Java.',
-        imageUrl: ['./images/projects/spygame.png'],
+        title: 'Spy Network Communication System',
+        description: "This is a Java-based simulation project developed for CS 2ME3 at McMaster University. It demonstrates proficiency in software design and object-oriented programming by creating a secure communication system within a spy network. Key features include encryption algorithms and the use of design patterns for adaptable and secure communication.",
+        imageUrl: ['./images/projects/spynetwork.png'],
         technologies: ['Java'],
         githubUrl: 'https://github.com/MustakimK/Spy-Network-Communication-System'
     },
     {
         id: 6,
         title: 'Game Server Rolling Backup',
-        description: 'Rolling back up for game save files using a docker container.',
+        description: "A utility that automatically creates backups of your game server at fixed intervals. It's designed to be used with Docker and offers flexibility through environment variables, allowing you to customize save and backup directories, backup frequency, and backup retention period.",
         imageUrl: ['./images/projects/gameserverbackup.png'], 
         technologies: ['Python', 'Docker'],
         githubUrl: 'https://github.com/MustakimK/Game-Server-Rolling-Backup'
@@ -54,16 +54,16 @@ const sampleProjects = [
     {
         id: 7,
         title: 'Derivative Calculator',
-        description: 'Derivative calculator using Haskell.',
+        description: "The Derivative Calculator is a Haskell module for symbolic computation of mathematical expression derivatives. It features an AST representation, evaluation, differentiation, and pretty printing of expressions, demonstrating proficiency in Haskell programming.",
         imageUrl: ['./images/projects/derivativecalc.png'],
         technologies: ['Haskell'],
         githubUrl: 'https://github.com/MustakimK/Derivative-Calculator'
     },
     {
         id: 8,
-        title: 'Multipurpose Discord Bot',
-        description: 'Multipurpose discord bot',
-        imageUrl: ['./images/home'],
+        title: 'Kaztastic Discord Bot',
+        description: "A versatile Discord bot for server management and user interaction, featuring moderation, fun, utility, and informational commands. Developed to deepen my understanding of JavaScript and the Discord API.",
+        imageUrl: ['./images/projects/discbot1.png', './images/projects/discbot2.png', './images/projects/discbot3.png'],
         technologies: ['Javascript', 'Node'],
         githubUrl: 'https://github.com/MustakimK/Multipurpose-Discord-Bot'
     }

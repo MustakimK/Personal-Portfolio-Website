@@ -19,13 +19,12 @@
 
 .project-image-container {
     position: relative;
-    flex: 0.5;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
     padding: 10px;
-    margin: 20px; 
+    margin: 20px;
     margin-bottom: 10px;
 }
 
@@ -34,7 +33,7 @@
     top: 50%;
     transform: translateY(-50%);
     background-color: rgba(0, 0, 0, 0.25);
-    color: white;
+    color: rgb(255, 255, 255);
     border: none;
     cursor: pointer;
     width: 30px; 
@@ -52,11 +51,11 @@
 }
 
 .left-arrow {
-    left: 16px;
+    left: 4%;
 }
 
 .right-arrow {
-    right: 16px;
+    right: 4%;
 }
 
 .project-image {
@@ -67,8 +66,6 @@
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 15px;
     border: 2px solid #000;
-    width: 100%;
-    height: auto;
     object-fit: scale-down;
     transition: transform 0.3s ease-in-out;
 }
@@ -79,6 +76,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: center;
     align-items: center;
     color: #000000;
     padding-top: 5px;
@@ -127,18 +125,6 @@
     transform: scale(1.05);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
-
-@keyframes slide {
-    from {
-        opacity: 0;
-        transform: scale(0.95);
-    }
-    to {
-        opacity: 1;
-        transform: scale(1);
-    }
-}
-
 
 @media (max-width: 1040px) {
     .project-display {
