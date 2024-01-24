@@ -8,7 +8,7 @@ const sampleProjects = [
         description: "This portfolio website is a reflection of my journey in Full Stack Software Development, showcasing my projects, skills learned, and personal growth in the field. It's crafted with HTML, CSS, and JavaScript, and provides insights into my work, serving as a point of contact for potential collaborations and learning opportunities.",
         imageUrl: ['./images/projects/portfoliowebsite1.png', './images/projects/portfoliowebsite2.png', './images/projects/portfoliowebsite3.png', './images/projects/portfoliowebsite4.png'], 
         technologies: ['Javascript', 'React', 'HTML', 'CSS', 'Vite'],
-        githubUrl: 'https://github.com/MustakimK/mustakimk.github.io',
+        githubUrl: 'https://github.com/MustakimK/Portfolio-Website',
         liveDemoUrl: 'https://ilied.com'
     },
     {
