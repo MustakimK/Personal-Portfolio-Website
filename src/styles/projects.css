@@ -1,7 +1,7 @@
 .projects {
     padding: 40px;
-    padding-left: 120px;
-    padding-right: 120px;
+    padding-left: 80px;
+    padding-right: 80px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1px;
@@ -22,8 +22,8 @@
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    margin-left: -80px;
-    margin-right: -80px;
+    margin-left: -40px;
+    margin-right: -40px;
 }
 
 .projects-title::before,
