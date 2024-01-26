@@ -18,7 +18,7 @@ const Home = () => {
                     <a href="https://github.com/MustakimK" target="_blank" rel="noopener noreferrer">
                         <img src='./icons/github.svg' alt="Github" className="github-pic" />
                     </a>
-                    <a href="./resume.txt" className="btn-resume" download>Get Resume</a>
+                    <a href="./MustakimKazi_Resume.pdf" className="btn-resume" download>Get Resume</a>
                 </div>
             </div>
             <img src='./images/home.jpg' alt="Mustakim" className="home-pic" />
